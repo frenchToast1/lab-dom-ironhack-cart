@@ -3,13 +3,27 @@
 function updateSubtotal(product) {
   console.log('Calculating subtotal, yey!');
 
-  //... your code goes here
+  // step 1: creer 2 variables price et quantity qui contiennent 25 et la qte saisie par l'iutilisateur
+  let priceElement = product.querySelector('.price span') // <span>25.00</span>
+  let price = priceElement.textContent // "25.00"
+  console.log(price)
+
+  
+  let quantity = 
 }
 
+// brancher un ecouteur click sur le bouton bleu
+window.addEventListener('load', () => {
+  const calculatePricesBtn = document.getElementById('calculate');
+  calculatePricesBtn.addEventListener('click', calculateAll);
+});
+
 function calculateAll() {
+  console.log('test calculateAll')
+
   // code in the following two lines is added just for testing purposes.
   // it runs when only iteration 1 is completed. at later point, it can be removed.
-  const singleProduct = document.querySelector('.product');
+  const singleProduct = document.querySelector('.product'); // <tr class="produc">
   updateSubtotal(singleProduct);
   // end of test
 
