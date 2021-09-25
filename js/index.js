@@ -9,7 +9,12 @@ function updateSubtotal(product) {
   console.log(price)
 
   
-  let quantity = 
+  let quantityElement = product.querySelector('.quantity input') // <input />
+  let quantity = quantityElement.value // "8"
+  console.log(quantity)
+
+  let calculate = Number(price) * Number(quantity)
+  console.log(calculate)
 }
 
 // brancher un ecouteur click sur le bouton bleu
