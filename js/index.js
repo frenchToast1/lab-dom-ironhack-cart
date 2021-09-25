@@ -14,7 +14,8 @@ function updateSubtotal(product) {
   console.log(quantity)
 
   let calculate = Number(price) * Number(quantity)
-  console.log(calculate)
+  let total = product.querySelector('.subtotal span')
+  
 }
 
 // brancher un ecouteur click sur le bouton bleu
@@ -24,7 +25,7 @@ window.addEventListener('load', () => {
 });
 
 function calculateAll() {
-  console.log('test calculateAll')
+  console.log(calculate)
 
   // code in the following two lines is added just for testing purposes.
   // it runs when only iteration 1 is completed. at later point, it can be removed.
